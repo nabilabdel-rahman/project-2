@@ -1,7 +1,5 @@
-FROM ubuntu:20.04
-MAINTAINER John Doe "noemail@website.domain"
-RUN apt-get update -y
-RUN apt-get install python3.8 python3-pip -y
+FROM python:3.8
+MAINTAINER Nabil Abdel-Rahman "nabilabdel-rahman@outlook.com"
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
